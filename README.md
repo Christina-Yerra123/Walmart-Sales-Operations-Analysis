@@ -1,11 +1,11 @@
 Walmart Sales & Operations Analysis
-About
+About:
 
 This project analyzes 10,000+ Walmart transactions across 3 cities using SQL and Power BI to track KPIs, detect anomalies, and provide actionable insights on revenue, customer behavior, and product performance. The dataset was obtained from the Kaggle Walmart Sales Forecasting Competition.
 
 The goal is to understand top-performing branches and products, identify trends, and support operational and strategic decision-making.
 
-Project Purpose
+Project Purpose:
 
 Explore Walmart sales data to identify high-performing products and branches.
 
@@ -13,7 +13,7 @@ Analyze customer behavior and payment patterns.
 
 Provide actionable insights to improve sales strategies and operational efficiency.
 
-Key Analysis Areas
+Key Analysis Areas-
 
 Revenue Insights: Total revenue, revenue by city & branch, revenue by product line.
 
@@ -23,7 +23,7 @@ Product Insights: Most sold product lines, average ratings, top products by quan
 
 Operational Insights: Branch ranking by revenue, common payment methods.
 
-SQL Queries Included
+SQL Queries Included:
 
 The following key queries were executed for analysis:
 
@@ -47,13 +47,13 @@ Total Sold per Branch & City – Identifies high-selling branches and cities.
 
 Gender Distribution per Product Line – Analyzes gender-based buying patterns for each product line.
 
-Tools & Technologies
+Tools & Technologies:
 
 SQL – Querying, aggregation, and window functions.
 
 Power BI – Dashboards and visualization for revenue, customer, and product trends.
 
-Impact & Results
+Impact & Results:
 
 Determined total revenue and revenue splits across branches and products.
 
