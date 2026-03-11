@@ -1,4 +1,5 @@
-Walmart Sales & Operations Analysis
+**Walmart Sales & Operations Analysis**
+
 About:
 
 This project analyzes 10,000+ Walmart transactions across 3 cities using SQL and Power BI to track KPIs, detect anomalies, and provide actionable insights on revenue, customer behavior, and product performance. The dataset was obtained from the Kaggle Walmart Sales Forecasting Competition.
