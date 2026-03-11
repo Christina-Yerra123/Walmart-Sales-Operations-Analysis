@@ -1,27 +1,67 @@
 Walmart Sales & Operations Analysis
+About
 
-Project Overview:
-Analyzed 10,000+ Walmart transactions across multiple cities and branches to track KPIs, detect anomalies, and provide actionable insights on revenue, customer behavior, and product performance using SQL and Power BI.
+This project analyzes 10,000+ Walmart transactions across 3 cities using SQL and Power BI to track KPIs, detect anomalies, and provide actionable insights on revenue, customer behavior, and product performance. The dataset was obtained from the Kaggle Walmart Sales Forecasting Competition.
 
-Key Highlights & Impact
-Data Extraction & Validation: Executed 25+ SQL queries to clean, transform, and validate data, ensuring accurate and reliable datasets for analysis.
-Interactive Dashboards: Built Power BI dashboards to visualize order status, revenue trends, customer segmentation, and product-line performance.
+The goal is to understand top-performing branches and products, identify trends, and support operational and strategic decision-making.
 
-Revenue Analysis:
+Project Purpose
 
-Total Revenue: ₹322,966+
-Revenue per Transaction: ₹322.97
-Ensured consistent performance tracking and data-driven insights.
-Customer Insights: Normal 50.85% | Member 49.15% revenue split, highlighting balanced dependency across customer segments.
-Product-Line Performance: ~16–18% contribution per category; identified high-performing products and guided inventory and sales strategies.
+Explore Walmart sales data to identify high-performing products and branches.
 
-Branch-Level Insights: Ranked stores by revenue using window functions and aggregates to enable resource optimization.
-Quantity Sold Analysis: Calculated total quantity sold per branch and city, identifying top-performing locations.
-Demographics Analysis: Evaluated gender distribution per product line to understand customer behavior and preferences.
+Analyze customer behavior and payment patterns.
 
-Operational Impact: Insights led to 18% improvement in reporting accuracy and 15% improvement in operational efficiency, enabling better managerial decisions.
+Provide actionable insights to improve sales strategies and operational efficiency.
+
+Key Analysis Areas
+
+Revenue Insights: Total revenue, revenue by city & branch, revenue by product line.
+
+Customer Insights: Revenue distribution by customer type, gender-based product popularity.
+
+Product Insights: Most sold product lines, average ratings, top products by quantity.
+
+Operational Insights: Branch ranking by revenue, common payment methods.
+
+SQL Queries Included
+
+The following key queries were executed for analysis:
+
+Total Revenue – Computes overall revenue across all transactions.
+
+Revenue per City & Branch – Aggregates revenue by city and branch.
+
+Revenue per Product Line – Calculates revenue contribution of each product line.
+
+Average Rating per Product Line – Measures customer satisfaction for products.
+
+Revenue Percentage by Customer Type – Shows contribution of each customer segment to total revenue (window function).
+
+Branch Ranking by Revenue – Ranks branches based on total revenue (window function).
+
+Common Payment Methods – Identifies the most frequently used payment types.
+
+Product Popularity – Counts transactions per product line to detect top products.
+
+Total Sold per Branch & City – Identifies high-selling branches and cities.
+
+Gender Distribution per Product Line – Analyzes gender-based buying patterns for each product line.
 
 Tools & Technologies
-SQL: Queries, aggregation, window functions
-Excel: Data cleaning and validation
-Power BI: Dashboards, KPIs, interactive visualizations
+
+SQL – Querying, aggregation, and window functions.
+
+Power BI – Dashboards and visualization for revenue, customer, and product trends.
+
+Impact & Results
+
+Determined total revenue and revenue splits across branches and products.
+
+Highlighted top-performing product lines and customer segments.
+
+Identified most common payment methods and branch performance rankings.
+
+Provided actionable insights for operational efficiency and sales optimization.
+
+
+
