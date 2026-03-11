@@ -1,0 +1,59 @@
+Walmart Sales Analysis SQL Queries
+
+-- 1. Total Revenue
+SELECT ROUND(SUM(total), 2) AS total_revenue
+FROM sales;
+
+-- 2. Revenue per City & Branch
+SELECT city, branch, ROUND(SUM(total), 2) AS city_revenue
+FROM sales
+GROUP BY city, branch
+ORDER BY city_revenue DESC;
+
+-- 3. Revenue per Product Line
+SELECT product_line, SUM(total) AS product_revenue
+FROM sales
+GROUP BY product_line
+ORDER BY product_revenue DESC;
+
+-- 4. Average Rating per Product Line
+SELECT product_line, ROUND(AVG(rating), 2) AS avg_rating
+FROM sales
+GROUP BY product_line
+ORDER BY avg_rating DESC;
+
+-- 5. Revenue Percentage by Customer Type
+SELECT customer_type, ROUND(SUM(total)*100.0/SUM(SUM(total)) OVER (), 2) AS revenue_percentage
+FROM sales
+GROUP BY customer_type;
+
+-- 6. Branch Ranking by Revenue
+SELECT branch, SUM(total) AS revenue,
+       RANK() OVER (ORDER BY SUM(total) DESC) AS branch_rank
+FROM sales
+GROUP BY branch;
+
+-- 7. Common Payment Methods
+SELECT payment, COUNT(payment) AS common_transaction
+FROM sales
+GROUP BY payment
+ORDER BY common_transaction DESC;
+
+-- 8. Product Popularity
+SELECT product_line, COUNT(product_line) AS common_product
+FROM sales
+GROUP BY product_line
+ORDER BY common_product DESC;
+
+-- 9. Total Sold per Branch & City
+SELECT branch, city, SUM(quantity) AS total_sold
+FROM sales
+GROUP BY branch, city
+HAVING SUM(quantity) > (SELECT AVG(quantity) FROM sales)
+ORDER BY total_sold DESC;
+
+-- 10. Gender Distribution per Product Line
+SELECT gender, product_line, COUNT(gender) AS total_count
+FROM sales
+GROUP BY gender, product_line
+ORDER BY total_count DESC;
